@@ -1,16 +1,16 @@
 # CardPass — Politique de confidentialité / Privacy Policy
 
-*Dernière mise à jour : 22 novembre 2026*
+*Dernière mise à jour : 22 novembre 2026 (version 2.0.1)*
 
 ## Français
 
 CardPass ne collecte, ne transmet et ne partage **aucune donnée personnelle**.
 Tout ce que l'application enregistre reste sur votre appareil.
 
-- **Accès réseau limité aux decks.** L'application se connecte uniquement pour
-  lire la liste des decks proposés et télécharger un deck que vous choisissez
-  (fichiers hébergés sur GitHub). Aucune donnée n'est envoyée : pas de compte,
-  pas d'identifiant, pas de statistiques d'usage transmises.
+- **Aucun accès réseau.** L'application n'a pas la permission Internet : elle
+  ne se connecte à rien et n'envoie rien. Pas de compte, pas d'identifiant, pas
+  de statistiques d'usage transmises. Le bouton « Parcourir les decks AnkiWeb »
+  ouvre simplement votre navigateur.
 - **Statistiques d'usage** (`PACKAGE_USAGE_STATS`) : utilisées uniquement pour
   savoir quelle application est au premier plan, en mémoire, à l'instant T.
   L'historique d'utilisation des autres applications n'est ni enregistré ni
@@ -40,9 +40,9 @@ Contact : justin.galerne@hotmail.fr
 CardPass does not collect, transmit, or share **any personal data**. Everything
 the app records stays on your device.
 
-- **Network access limited to decks.** The app connects only to read the list
-  of suggested decks and to download a deck you choose (files hosted on
-  GitHub). Nothing is sent: no account, no identifier, no usage statistics.
+- **No network access.** The app does not have the Internet permission: it
+  connects to nothing and sends nothing. No account, no identifier, no usage
+  statistics. The "Browse AnkiWeb decks" button simply opens your browser.
 - **Usage access** (`PACKAGE_USAGE_STATS`): used solely to determine which app
   is currently in the foreground, in memory, at that moment. Your usage history
   of other apps is neither recorded nor transmitted.
