@@ -1,4 +1,4 @@
-# flashpass-decks
+# cardpass-decks
 
 Fichiers publics lus par l'application **CardPass** (Android) :
 
@@ -10,7 +10,7 @@ Fichiers publics lus par l'application **CardPass** (Android) :
 
 ```json
 { "decks": [
-  { "name": "…", "description": "…", "notes": 68, "url": "https://raw.githubusercontent.com/justingalerne/flashpass-decks/main/peg.apkg" },
+  { "name": "…", "description": "…", "notes": 68, "url": "https://raw.githubusercontent.com/justingalerne/cardpass-decks/main/peg.apkg" },
   { "name": "…", "description": "…", "ankiweb": "https://ankiweb.net/shared/info/<id>" }
 ] }
 ```
