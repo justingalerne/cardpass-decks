@@ -1,22 +1,11 @@
 # cardpass-decks
 
-Fichiers publics lus par l'application **CardPass** (Android) :
+Public home of the privacy policy of **CardPass**, an Android app that asks a few
+flashcards before opening the apps you choose to limit.
 
-- `decks.json` — liste des decks proposés dans l'app ;
-- `*.apkg` — decks téléchargeables, importés dans AnkiDroid ;
-- `PRIVACY.md` — politique de confidentialité de l'app.
+- [`PRIVACY.md`](PRIVACY.md): CardPass privacy policy (English, then French), linked
+  from the Google Play listing. It also explains how to delete your data.
+- Relay used by the optional AI assistant connector (source code):
+  https://github.com/justingalerne/cardpass-relay
 
-## Format de `decks.json`
-
-```json
-{ "decks": [
-  { "name": "…", "description": "…", "notes": 68, "url": "https://raw.githubusercontent.com/justingalerne/cardpass-decks/main/peg.apkg" },
-  { "name": "…", "description": "…", "ankiweb": "https://ankiweb.net/shared/info/<id>" }
-] }
-```
-
-`url` : deck téléchargé par CardPass puis tendu à AnkiDroid. `ankiweb` : simple lien
-vers la fiche AnkiWeb (decks tiers, non redistribués). Les `.apkg` sont exportés depuis
-Anki **sans planification** pour rester légers.
-
-CardPass n'est pas affilié à Anki ni à AnkiDroid.
+CardPass is not affiliated with Anki or AnkiDroid.

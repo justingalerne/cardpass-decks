@@ -1,6 +1,64 @@
-# CardPass — Politique de confidentialité / Privacy Policy
+# CardPass — Privacy Policy / Politique de confidentialité
 
-*Dernière mise à jour : 27 novembre 2026 (version 3.0.0)*
+*Last updated: 27 November 2026 (version 3.0.0) · Dernière mise à jour : 27 novembre 2026*
+
+## English
+
+CardPass does not collect, sell, or share **any personal data**. Unless you
+connect an AI assistant (optional, below), nothing leaves your device. No
+account, no analytics, no ads.
+
+- **AI assistant connector (optional, off by default).** If you connect an
+  MCP-compatible AI assistant or agent (by scanning the code it shows),
+  CardPass uses the Internet to exchange your cards with the CardPass relay
+  (`cardpass-justin.duckdns.org`, public source code:
+  https://github.com/justingalerne/cardpass-relay):
+  - cards the assistant adds or edits, and a copy of the cards you created in
+    CardPass (so it can find them), are **encrypted** (AES-256-GCM) with a key
+    generated on your phone;
+  - the relay keeps only this encrypted data and fingerprints; it stores
+    neither the key nor the card text. Text exists in plain form only in
+    memory, while an assistant request is being handled;
+  - the relay sees technical metadata (random device id, sizes, timestamps);
+  - the assistant you connect, and its provider, see the cards it writes or
+    reads, under their own terms;
+  - decks imported from Anki are never sent;
+  - you can disconnect an assistant at any time in Settings.
+  If a received card contains an image link (https), the phone downloads that
+  image.
+- **Without the connector**, the app connects to nothing. The "Browse AnkiWeb
+  decks" button simply opens your browser.
+- **Usage access** (`PACKAGE_USAGE_STATS`): used solely to determine which app
+  is currently in the foreground, in memory, at that moment. Your usage history
+  of other apps is neither recorded nor transmitted.
+- **Locally stored data**:
+  - your settings (watched apps, chosen deck, card count, unlock duration);
+  - the decks you import (`.apkg` files or CSV spreadsheets) and the cards you
+    create, including their images and sounds;
+  - your progress: history of your answers and the time of each unlock
+    (unlocked app, number of cards), for the dashboard.
+
+  This data stays on the device, is excluded from system backups, and is
+  deleted with the app.
+- **Files you open**: CardPass only reads the files you choose to import
+  (decks, spreadsheets, images).
+- **No third parties**: no analytics, no ads, no tracking SDKs.
+
+### Delete your data (CardPass)
+
+- **Data on the relay** (if you connected an assistant): in CardPass →
+  Settings → AI assistant, tap **"Delete my data from the relay"**. The relay
+  immediately and permanently erases everything it keeps for your phone:
+  connected assistants, pending cards and the encrypted copy of your cards.
+  Nothing is kept afterwards. "Disconnect" only removes an assistant's access.
+- **Data on the phone**: delete cards or decks in the app, or uninstall it to
+  erase everything.
+- Any question: justin.galerne@hotmail.fr.
+
+CardPass is not affiliated with Anki or AnkiDroid. "Anki" is a trademark of its
+respective owner; CardPass only reads the `.apkg` file format.
+
+Contact: justin.galerne@hotmail.fr
 
 ## Français
 
@@ -64,61 +122,3 @@ CardPass n'est pas affiliée à Anki ni à AnkiDroid. « Anki » est une marque 
 son ayant droit ; CardPass sait seulement lire le format de fichier `.apkg`.
 
 Contact : justin.galerne@hotmail.fr
-
-## English
-
-CardPass does not collect, sell, or share **any personal data**. Unless you
-connect an AI assistant (optional, below), nothing leaves your device. No
-account, no analytics, no ads.
-
-- **AI assistant connector (optional, off by default).** If you connect an
-  MCP-compatible AI assistant or agent (by scanning the code it shows),
-  CardPass uses the Internet to exchange your cards with the CardPass relay
-  (`cardpass-justin.duckdns.org`, public source code:
-  https://github.com/justingalerne/cardpass-relay):
-  - cards the assistant adds or edits, and a copy of the cards you created in
-    CardPass (so it can find them), are **encrypted** (AES-256-GCM) with a key
-    generated on your phone;
-  - the relay keeps only this encrypted data and fingerprints; it stores
-    neither the key nor the card text. Text exists in plain form only in
-    memory, while an assistant request is being handled;
-  - the relay sees technical metadata (random device id, sizes, timestamps);
-  - the assistant you connect, and its provider, see the cards it writes or
-    reads, under their own terms;
-  - decks imported from Anki are never sent;
-  - you can disconnect an assistant at any time in Settings.
-  If a received card contains an image link (https), the phone downloads that
-  image.
-- **Without the connector**, the app connects to nothing. The "Browse AnkiWeb
-  decks" button simply opens your browser.
-- **Usage access** (`PACKAGE_USAGE_STATS`): used solely to determine which app
-  is currently in the foreground, in memory, at that moment. Your usage history
-  of other apps is neither recorded nor transmitted.
-- **Locally stored data**:
-  - your settings (watched apps, chosen deck, card count, unlock duration);
-  - the decks you import (`.apkg` files or CSV spreadsheets) and the cards you
-    create, including their images and sounds;
-  - your progress: history of your answers and the time of each unlock
-    (unlocked app, number of cards), for the dashboard.
-
-  This data stays on the device, is excluded from system backups, and is
-  deleted with the app.
-- **Files you open**: CardPass only reads the files you choose to import
-  (decks, spreadsheets, images).
-- **No third parties**: no analytics, no ads, no tracking SDKs.
-
-### Delete your data (CardPass)
-
-- **Data on the relay** (if you connected an assistant): in CardPass →
-  Settings → AI assistant, tap **"Delete my data from the relay"**. The relay
-  immediately and permanently erases everything it keeps for your phone:
-  connected assistants, pending cards and the encrypted copy of your cards.
-  Nothing is kept afterwards. "Disconnect" only removes an assistant's access.
-- **Data on the phone**: delete cards or decks in the app, or uninstall it to
-  erase everything.
-- Any question: justin.galerne@hotmail.fr.
-
-CardPass is not affiliated with Anki or AnkiDroid. "Anki" is a trademark of its
-respective owner; CardPass only reads the `.apkg` file format.
-
-Contact: justin.galerne@hotmail.fr
